@@ -22,8 +22,9 @@ public class Objekti : MonoBehaviour {
 	public GameObject pedejaisVilktais = null;
 
 	void Start (){
-		
-
+		atrkKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
+		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
+		bussKoord = Autobuss.GetComponent<RectTransform> ().localPosition;
 
 	}
 }
