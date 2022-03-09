@@ -25,6 +25,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 		//Velkot objektu, tas paliek caurspidigs pa 0.6 vienibam, izsledzas blocksraycast
 		grupa.alpha = 0.6f;
 		grupa.blocksRaycasts = false;
+		objektuSkripts.pedejaisVilktais = null;
 	}
 
 	public void OnDrag(PointerEventData notikums){
@@ -36,6 +37,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Stopped dragging");
 		grupa.alpha = 1f;
+		objektuSkripts.pedejaisVilktais = notikums.pointerDrag;
 
 		if (objektuSkripts.istajavieta == false) {
 			grupa.blocksRaycasts = true;
