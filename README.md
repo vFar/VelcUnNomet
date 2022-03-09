@@ -3,8 +3,8 @@ Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un vei
 
 ### To - do list
 
-- [ ] Spēles ainas jeb attēla iekārtošana Unity dzinī
-- [ ] Attēla objekta Drag & Drop nodrošināšana
+- [x] Spēles ainas jeb attēla iekārtošana Unity dzinī
+- [x] Attēla objekta Drag & Drop nodrošināšana
 - [ ] Attēla objekta korektā pozicionēšanas nodrošināšana
 - [ ] Objektu 360° rotāciju iespējas pielietošana
 - [ ] Attēla objekta izmēra maiņas iespēju ieviešana

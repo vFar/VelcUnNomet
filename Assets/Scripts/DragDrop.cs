@@ -35,5 +35,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
 	public void OnEndDrag(PointerEventData notikums){
 		Debug.Log ("Stopped dragging");
+		grupa.alpha = 1f;
+
+		if (objektuSkripts.istajavieta == false) {
+			grupa.blocksRaycasts = true;
+		} else {
+			objektuSkripts.pedejaisVilktais = null;
+		}
+
+		objektuSkripts.istajavieta = false;
+			
 	}
+
+
+
+
+
+
 }
