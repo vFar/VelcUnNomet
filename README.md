@@ -2,7 +2,7 @@
 
 Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un veikt lieluma un rotācijas izmaiņas
 
-![Game](https://www.seekpng.com/png/detail/230-2304248_map-clip-art-old-treasure-map-cartoon-png.png)
+![Game](https://play-lh.googleusercontent.com/oB85hJoFzf-cKHsYe0Zbn3erDg_6z0Chd6YGhs_k1dfg2dbSz6JnfEMuaUiPtzKfEYg)
 
 ### To - do list
 
@@ -22,6 +22,6 @@ Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un vei
 
 - [ ] Galvenās izvēlnes izstrāde
 
-- [ ] Pievienoti +11 attēlu objekti un piesaistīti skriptiem, kas ļauj veikt attēla objekta izmaiņas
+- [x] Pievienoti +11 attēlu objekti un piesaistīti skriptiem, kas ļauj veikt attēla objekta izmaiņas
 
 - [ ] Veikta aktīva koda rindas komentēšana

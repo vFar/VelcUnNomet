@@ -41,8 +41,38 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [3]);
 						break;
 
+						//Parejiem attelu objektiem, pieskir Case ar tag vertibu, kas attelu objektam iedod audio clip
+
 					case "Policija":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [4]);
+						break;
+
+					case "b2":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [5]);
+						break;
+
+					case "CementaMaisitajs":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [6]);
+						break;
+
+					case "e46":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [7]);
+						break;
+
+					case "Ekskavators":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [8]);
+						break;
+
+					case "Traktors1":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [9]);
+						break;
+
+					case "Traktors5":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [10]);
+						break;
+
+					case "Ugunsdzeseji":
+						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [11]);
 						break;
 
 					default:
@@ -71,10 +101,39 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					objektuSkripts.Autobuss.GetComponent<RectTransform> ().localPosition = objektuSkripts.bussKoord;
 					break;
 
+					//Parejos attelu objektus parliek sakuma pozicija, ja ielikta nepaireza vieta (nepareiza aizkrasota attela objekta vieta!)
+
 				case "Policija":
 					objektuSkripts.policija.GetComponent<RectTransform> ().localPosition = objektuSkripts.policKoord;
 					break;
 
+				case "b2":
+					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition = objektuSkripts.b2Koord;
+					break;
+
+				case "CementaMaisitajs":
+					objektuSkripts.CementaMaisitajs.GetComponent<RectTransform> ().localPosition = objektuSkripts.CementaKoord;
+					break;
+
+				case "e46":
+					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition = objektuSkripts.e46Koord;
+					break;
+
+				case "Ekskavators":
+					objektuSkripts.Ekskavators.GetComponent<RectTransform> ().localPosition = objektuSkripts.EksKoord;
+					break;
+
+				case "Traktors1":
+					objektuSkripts.Traktors1.GetComponent<RectTransform> ().localPosition = objektuSkripts.Tr1Koord;
+					break;
+
+				case "Traktors5":
+					objektuSkripts.Traktors5.GetComponent<RectTransform> ().localPosition = objektuSkripts.Tr5Koord;
+					break;
+
+				case "Ugunsdzeseji":
+					objektuSkripts.Ugunsdzeseji.GetComponent<RectTransform> ().localPosition = objektuSkripts.UguKoord;
+					break;
 
 				default:
 					Debug.Log ("Nedefinéts tags!");
