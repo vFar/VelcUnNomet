@@ -1,8 +1,8 @@
-# VelcUnNomet
+# VelcUnNomet 🎮🎮🎮
 
 Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un veikt lieluma un rotācijas izmaiņas
 
-(https://www.seekpng.com/png/detail/230-2304248_map-clip-art-old-treasure-map-cartoon-png.png)
+![Game](https://www.seekpng.com/png/detail/230-2304248_map-clip-art-old-treasure-map-cartoon-png.png)
 
 ### To - do list
 
