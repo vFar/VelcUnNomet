@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class Restart : MonoBehaviour {
-	public GameObject RestartPoga;
 
-	public void OnPointerClick(PointerEventData notikums){
-		SceneManager.LoadScene ("Pilseta", LoadSceneMode.Single);
+	public void GalvenaIzvelne(){
+		//Ja tiek uzspiesta Restart poga ar restart iconu png attelu, tad Scene jeb aina parmainas uz MainMenu
+		SceneManager.LoadScene ("MainMenu", LoadSceneMode.Single);
 	}
 
 }

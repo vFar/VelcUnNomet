@@ -20,7 +20,7 @@ Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un vei
 
 - [ ] Punktu sistēmas ieviešana jeb uzvaras logs
 
-- [ ] Galvenās izvēlnes izstrāde
+- [x] Galvenās izvēlnes izstrāde
 
 - [x] Pievienoti +11 attēlu objekti un piesaistīti skriptiem, kas ļauj veikt attēla objekta izmaiņas
 
