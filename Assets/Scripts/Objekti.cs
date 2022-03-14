@@ -23,6 +23,9 @@ public class Objekti : MonoBehaviour {
 	public Vector2 atroKoord;
 	[HideInInspector]
 	public Vector2 bussKoord;
+
+	//Izveidojam mainigos, kas uzglabas pasreizejo attela objekta koordinatas un ar HideInInspector paslepjam inspector loga
+
 	[HideInInspector]
 	public Vector2 policKoord;
 	[HideInInspector]
