@@ -8,6 +8,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 	private Vector2 vietasIzm, velkObjIzm;
 	private float xIzmeruStarp, yIzmeruStarp;
 	public Objekti objektuSkripts;
+	public int POINTS=0;
 
 	public void OnDrop(PointerEventData notikums){
 		if (notikums.pointerDrag != null) {
@@ -29,6 +30,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					switch (notikums.pointerDrag.tag) {
 					case "Atkritumi":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [1]);
+
 						break;
 					
 
@@ -39,48 +41,57 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 
 					case "Autobuss":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [3]);
+
 						break;
 
-						//Parejiem attelu objektiem, pieskir Case ar tag vertibu, kas attelu objektam iedod audio clip
+						//Parejiem attelu objektiem, pieskir Case ar tag vertibu, kas attelu objektam liek atskanot audio clipu un saglaba punktu
 
 					case "Policija":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [4]);
+
 						break;
 
 					case "b2":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [5]);
+
 						break;
 
 					case "CementaMaisitajs":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [6]);
+
 						break;
 
 					case "e46":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [7]);
+
 						break;
 
 					case "Ekskavators":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [8]);
+
 						break;
 
 					case "Traktors1":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [9]);
+
 						break;
 
 					case "Traktors5":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [10]);
+
 						break;
 
 					case "Ugunsdzeseji":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [11]);
+
 						break;
 
 					default:
 						Debug.Log ("Nedefinéts tags!");
 						break;
 					}
-				}
-
+				}			
+		
 
 			} else {
 				objektuSkripts.istajavieta = false;
@@ -94,29 +105,35 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 
 				case "AtraPalidziba":
 					objektuSkripts.atraPalidziba.GetComponent<RectTransform> ().localPosition = objektuSkripts.atroKoord;
+
 					break;
 
 
 				case "Autobuss":
 					objektuSkripts.Autobuss.GetComponent<RectTransform> ().localPosition = objektuSkripts.bussKoord;
+				
 					break;
 
 					//Parejos attelu objektus parliek sakuma pozicija, ja ielikta nepaireza vieta (nepareiza aizkrasota attela objekta vieta!)
 
 				case "Policija":
 					objektuSkripts.policija.GetComponent<RectTransform> ().localPosition = objektuSkripts.policKoord;
+
 					break;
 
 				case "b2":
 					objektuSkripts.b2.GetComponent<RectTransform> ().localPosition = objektuSkripts.b2Koord;
+
 					break;
 
 				case "CementaMaisitajs":
 					objektuSkripts.CementaMaisitajs.GetComponent<RectTransform> ().localPosition = objektuSkripts.CementaKoord;
+
 					break;
 
 				case "e46":
 					objektuSkripts.e46.GetComponent<RectTransform> ().localPosition = objektuSkripts.e46Koord;
+
 					break;
 
 				case "Ekskavators":
@@ -141,5 +158,6 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				}
 			}
 		}
+			
 	}
 }
