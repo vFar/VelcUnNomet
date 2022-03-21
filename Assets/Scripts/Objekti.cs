@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Objekti : MonoBehaviour {
 	public Canvas kanva;
@@ -50,12 +51,29 @@ public class Objekti : MonoBehaviour {
 	public bool istajavieta = false;
 	public GameObject pedejaisVilktais = null;
 
+	public int points=0;
+	public GameObject winner;
+	public GameObject star1;
+	public GameObject star2;
+	public GameObject star3;
+
+	public GameObject scroll;
+	public GameObject text1;
+	public GameObject grayedstar1;
+	public GameObject grayedstar2;
+	public GameObject grayedstar3;
+	public GameObject poga;
+
+	//Laika jeb taimera nepieciesamie definejumi
+	public float laiks;
+	public bool aktivsLaiks=true;
+
 	void Start (){
 		atrkKoord = atkritumuMasina.GetComponent<RectTransform> ().localPosition;
 		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
 		bussKoord = Autobuss.GetComponent<RectTransform> ().localPosition;
 
-		//Void Start metodé pievieno komandas, kas mainígajam pieśḱirt paśreizéjo position vértíbu
+		//Void Start metodé pievieno komandas, kas mainígajam pieśḱirt paśreizéjo position vértíbu un paslepj uzvaras logu
 
 		policKoord = policija.GetComponent<RectTransform> ().localPosition;
 		b2Koord = b2.GetComponent<RectTransform> ().localPosition;
@@ -65,12 +83,15 @@ public class Objekti : MonoBehaviour {
 		Tr1Koord = Traktors1.GetComponent<RectTransform> ().localPosition;
 		Tr5Koord = Traktors5.GetComponent<RectTransform> ().localPosition;
 		UguKoord = Ugunsdzeseji.GetComponent<RectTransform> ().localPosition;
+		scroll.SetActive (false);
+		grayedstar1.SetActive (false);
+		grayedstar2.SetActive (false);
+		grayedstar3.SetActive (false);
+		text1.SetActive (false);
+		poga.SetActive (false);
 
-
-
-
-
-
-
+		star1.SetActive (false);
+		star2.SetActive (false);
+		star3.SetActive (false);
 	}
 }

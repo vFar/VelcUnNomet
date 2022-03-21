@@ -6,21 +6,27 @@ using UnityEngine.SceneManagement;
 
 
 public class Winner : MonoBehaviour {
+	//Izveido nepieceisamos mainigos
 	public GameObject winner;
+	public GameObject taimeris;
+	public Objekti objektuSkripts;
+	[HideInInspector]
+	public bool show=false;
 
 
 	public void MainMenuButton(){
 		//No Pilseta ainas uz Main Menu ainu
 		SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+		objektuSkripts.star1.SetActive (false);
 	}
 
+
+	//Laika skaitisana
 	void Update(){
-
-		//Uzzina vai aina "Pilseta" ir ieladeta, ja ir, tad paslepj uzvaras logu
-		if (SceneManager.GetActiveScene () == SceneManager.GetSceneByName ("Pilseta")) {
-			winner.SetActive (false);
+		if (objektuSkripts.aktivsLaiks == true) {
+			objektuSkripts.laiks += Time.deltaTime;
 		}
-
 	}
+		
 
 }

@@ -16,12 +16,12 @@ Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un vei
 
 - [x] Attēla objekta izmēra maiņas iespēju ieviešana
 
-- [ ] Laika uzņemšana un tās atskaišu integrēšana (Timer)
+- [x] Laika uzņemšana un tās atskaišu integrēšana (Timer)
 
-- [ ] Punktu sistēmas ieviešana jeb uzvaras logs
+- [x] Punktu sistēmas ieviešana jeb uzvaras logs
 
 - [x] Galvenās izvēlnes izstrāde
 
 - [x] Pievienoti +11 attēlu objekti un piesaistīti skriptiem, kas ļauj veikt attēla objekta izmaiņas
 
-- [ ] Veikta aktīva koda rindas komentēšana
+- [x] Veikta aktīva koda rindas komentēšana

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class NomesanasVieta : MonoBehaviour, IDropHandler {
@@ -8,7 +9,9 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 	private Vector2 vietasIzm, velkObjIzm;
 	private float xIzmeruStarp, yIzmeruStarp;
 	public Objekti objektuSkripts;
-	public int POINTS=0;
+	//no Winner skripta izvelkam GameObject winner
+	public Winner winnerSkripts;
+
 
 	public void OnDrop(PointerEventData notikums){
 		if (notikums.pointerDrag != null) {
@@ -30,60 +33,61 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					switch (notikums.pointerDrag.tag) {
 					case "Atkritumi":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [1]);
-
+						objektuSkripts.points++;
 						break;
 					
 
 					case "AtraPalidziba":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [2]);
+						objektuSkripts.points++;
 						break;
 				
 
 					case "Autobuss":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [3]);
-
+						objektuSkripts.points++;
 						break;
 
 						//Parejiem attelu objektiem, pieskir Case ar tag vertibu, kas attelu objektam liek atskanot audio clipu un saglaba punktu
 
 					case "Policija":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [4]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "b2":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [5]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "CementaMaisitajs":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [6]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "e46":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [7]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "Ekskavators":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [8]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "Traktors1":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [9]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "Traktors5":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [10]);
-
+						objektuSkripts.points++;
 						break;
 
 					case "Ugunsdzeseji":
 						objektuSkripts.avots.PlayOneShot (objektuSkripts.skanasKlipi [11]);
-
+						objektuSkripts.points++;
 						break;
 
 					default:
@@ -157,6 +161,45 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					break;
 				}
 			}
+		}
+
+		//Ja punktu skaits parsniegs 10 jeb sasniegs tos 11, tad izmetisies uzvaras logs, kura tiks paraditas zvaigznes un taimeris
+		if (objektuSkripts.points > 10) {
+			objektuSkripts.scroll.SetActive (true);
+			objektuSkripts.grayedstar1.SetActive (true);
+			objektuSkripts.grayedstar2.SetActive (true);
+			objektuSkripts.grayedstar3.SetActive (true);
+			objektuSkripts.text1.SetActive (true);
+			objektuSkripts.poga.SetActive (true);
+			objektuSkripts.aktivsLaiks = false;
+
+			//Teksts, kuru izvadis
+			objektuSkripts.text1.GetComponent<Text>().text = Mathf.Round(objektuSkripts.laiks).ToString ()+" sekundes!";
+
+
+			//Parbauda laika intervalus prieks zvaigznisu pasniegsanai
+			if (objektuSkripts.laiks >= 80) {
+				objektuSkripts.star1.SetActive (true);
+				objektuSkripts.star2.SetActive (true);
+				objektuSkripts.star3.SetActive (false);
+			} else if (objektuSkripts.laiks <= 60) {
+				objektuSkripts.star1.SetActive (true);
+				objektuSkripts.star2.SetActive (true);
+				objektuSkripts.star3.SetActive (true);
+			}
+
+
+			if (objektuSkripts.laiks >= 140) {
+				objektuSkripts.star1.SetActive (true);
+				objektuSkripts.star2.SetActive (false);
+				objektuSkripts.star3.SetActive (false);
+			}
+
+			if (objektuSkripts.laiks >= 240) {
+				objektuSkripts.star1.SetActive (false);
+				objektuSkripts.star2.SetActive (false);
+				objektuSkripts.star3.SetActive (false);
+			}	
 		}
 			
 	}
