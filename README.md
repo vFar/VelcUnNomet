@@ -1,7 +1,12 @@
 # 2D videogame "Drag and Drop!" 🎮
+# EN 
 
 ### 2D videogame that's created in Unity where a player or user can make changes to specific objects, such as drag and drop, resize and rotation.
 The objective of this software product is to enhance its users' logical reasoning skills and provide an engaging, interactive user experience. The product has potential for improvement in several areas. For instance, incorporating varying game levels and degrees of difficulty can encourage users to perform fine motor activities that promote a child's development, such as finger dexterity and accuracy.
+
+
+Within Unity 3D engine - older and much outdated version is in use, which is available at [https://unity.com/download](https://unity.com/download).
+C# programming language is used to code videogame "Drag & Drop!" and code editor MonoDevelop was used.
 
 ![Game](https://i.imgur.com/3TctFgI.png)
 
@@ -30,9 +35,13 @@ The objective of this software product is to enhance its users' logical reasonin
 
 
 # 2D video spēle "Velc un Nomet!" 🎮
+# LV
 
 ### Unity 2D projekta spēle, kas ļauj attēla objektu vilkšanu, nolikšanu un veikt lieluma un rotācijas izmaiņas.
 Šī programmatūras produkta perspektīva ir tā lietotāja loģiskās domāšanas stimulēšana un aizraujošais, interaktīvais dizains. Produkta iespējams pilnveidot dažādos aspektos, piemēram, var tikt veidoti papildus dažādi spēles līmeņi un grūtības pakāpes, kurās no lietotāja tiek sagaidītas dažādas salkās motorikas darbības (darbs ar pirkstiem, precizitāte), kas veicina bērna attīstību.
+
+Unity dziņa ietvaros tiek pielietota Unity vecāka versija, kura pieejama [https://unity.com/download](https://unity.com/download).
+Unity 3D ietvaros tiek pielietota C# valoda un MonoDevelop kodu redaktors.
 
 ![Game](https://i.imgur.com/RbvhlIb.png)
 
