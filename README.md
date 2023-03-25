@@ -1,8 +1,9 @@
 # 2D videogame "Drag and Drop!" 🎮
 
-### Uasdasd 
+### 2D videogame created in Unity where a player or user can make changes to specific objects, such as drag and drop, resize and rotation.
 
-![Game](https://play-lh.googleusercontent.com/oB85hJoFzf-cKHsYe0Zbn3erDg_6z0Chd6YGhs_k1dfg2dbSz6JnfEMuaUiPtzKfEYg)
+
+![Game](https://prnt.sc/tEq0cS3GDZdr)
 
 ### To - do list
 
@@ -34,7 +35,7 @@
 
 ![Game](https://play-lh.googleusercontent.com/oB85hJoFzf-cKHsYe0Zbn3erDg_6z0Chd6YGhs_k1dfg2dbSz6JnfEMuaUiPtzKfEYg)
 
-### To - do list
+### Uzdevumu saraksts
 
 - [x] Spēles ainas jeb attēla iekārtošana Unity dzinī
 
