@@ -8,6 +8,9 @@ The objective of this software product is to enhance its users' logical reasonin
 Within Unity 3D engine - older and much outdated version is in use, which is available at [https://unity.com/download](https://unity.com/download).
 C# programming language is used to code videogame "Drag & Drop!" and code editor MonoDevelop was used.
 
+Documentation's of PPA and PPS is based on LVS 72:1996 and LVS 68:1996 standards.
+
+
 ![Game](https://i.imgur.com/3TctFgI.png)
 
 ### To - do list
@@ -42,6 +45,8 @@ C# programming language is used to code videogame "Drag & Drop!" and code editor
 
 Unity dziņa ietvaros tiek pielietota Unity vecāka versija, kura pieejama [https://unity.com/download](https://unity.com/download).
 Unity 3D ietvaros tiek pielietota C# valoda un MonoDevelop kodu redaktors.
+
+PPA un PPS dokumentācija ir balstīta pēc LVS 72:1996 un LVS 68:1996 standartiem.
 
 ![Game](https://i.imgur.com/RbvhlIb.png)
 
