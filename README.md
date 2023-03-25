@@ -3,7 +3,7 @@
 ### 2D videogame created in Unity where a player or user can make changes to specific objects, such as drag and drop, resize and rotation.
 
 
-![Game](https://imgur.com/a/YQjIo0k)
+![Game]([https://imgur.com/a/YQjIo0k](https://imgur.com/3TctFgI))
 
 ### To - do list
 
